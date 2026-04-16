@@ -39,8 +39,8 @@
 # 从 https://github.com/wezterm/wezterm/releases 下载
 
 # 2. 安装字体（必需 Nerd Font 支持图标）
-# JetBrainsMono Nerd Font: https://github.com/ryanoasis/nerd-fonts/releases
-# 鸿蒙黑体（可选，中文显示）
+# Maple Mono NL NF CN
+# 更纱黑体（可选，中文显示）
 
 # 3. 部署配置
 # Windows
