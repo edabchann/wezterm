@@ -5,8 +5,8 @@ local font_size = platform().is_mac and 12 or 12
 
 return {
    font = wezterm.font_with_fallback({
-      'JetBrainsMonoNL Nerd Font',
-      '鸿蒙黑体',
+      'Maple MONO NL NF CN',
+      '更纱黑体',
    }),
    font_size = font_size,
 
