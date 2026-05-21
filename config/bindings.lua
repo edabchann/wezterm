@@ -27,7 +27,7 @@ local keys = {
    },
    { key = 'F11', mods = 'NONE',    action = act.ToggleFullScreen },
    { key = 'F12', mods = 'NONE',    action = act.ShowDebugOverlay },
-   { key = 'f',   mods = mod.SUPER, action = act.Search({ CaseInSensitiveString = '' }) },
+   { key = 'f',   mods = mod.SUPER_REV, action = act.Search({ CaseInSensitiveString = '' }) },
 
    -- custom commands --
    {
@@ -84,17 +84,17 @@ local keys = {
    -- tabs --
    -- tabs: spawn+close
    { key = 't',          mods = mod.SUPER,     action = act.SpawnTab('DefaultDomain') },
-   { key = 'w',          mods = mod.SUPER,     action = act.CloseCurrentTab({ confirm = false }) },
+   { key = 'c',          mods = mod.SUPER,     action = act.CloseCurrentTab({ confirm = false }) },
 
    -- tabs: navigation
-   { key = 'h',          mods = mod.SUPER,     action = act.ActivateTabRelative(-1) },
-   { key = 'l',          mods = mod.SUPER,     action = act.ActivateTabRelative(1) },
+   { key = '[',          mods = mod.SUPER,     action = act.ActivateTabRelative(-1) },
+   { key = ']',          mods = mod.SUPER,     action = act.ActivateTabRelative(1) },
    { key = 'h',          mods = mod.SUPER_REV, action = act.MoveTabRelative(-1) },
    { key = 'l',          mods = mod.SUPER_REV, action = act.MoveTabRelative(1) },
 
    -- window --
    -- spawn windows
-   { key = 'n',          mods = mod.SUPER,     action = act.SpawnWindow },
+   { key = 'w',          mods = mod.SUPER,     action = act.SpawnWindow },
 
    -- background controls --
    {
@@ -148,7 +148,7 @@ local keys = {
 
    -- panes: zoom+close pane
    { key = 'Enter', mods = mod.SUPER,     action = act.TogglePaneZoomState },
-   { key = 'w',     mods = mod.SUPER,     action = act.CloseCurrentPane({ confirm = false }) },
+   { key = 'c',     mods = mod.SUPER,     action = act.CloseCurrentPane({ confirm = false }) },
 
    -- panes: navigation
    { key = 'k',     mods = mod.SUPER_REV, action = act.ActivatePaneDirection('Up') },
