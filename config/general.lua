@@ -5,6 +5,11 @@ return {
    exit_behavior_messaging = 'Verbose',
    status_update_interval = 1000,
 
+   -- kitty keyboard protocol: TUI apps (dsh-neotui) can then distinguish
+   -- Shift+Enter from Enter and read exact modifiers. WezTerm ships with
+   -- this OFF by default, which makes Shift+Enter arrive as a plain CR.
+   enable_kitty_keyboard = true,
+
    scrollback_lines = 5000,
 
    audible_bell = "Disabled",
